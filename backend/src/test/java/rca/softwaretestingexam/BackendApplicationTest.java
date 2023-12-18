@@ -1,4 +1,4 @@
-package rca.devopsexam;
+package rca.softwaretestingexam;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
