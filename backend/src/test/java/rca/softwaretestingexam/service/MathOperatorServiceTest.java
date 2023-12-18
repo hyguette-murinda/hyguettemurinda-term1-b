@@ -49,5 +49,32 @@ public class MathOperatorServiceTest {
         assertThat(mathOperation).isEqualTo(actualMathOperator);
     }
 
+    @Test
+    public void whenMult_returnMultiplication() throws InvalidOperationException {
+        int operator1 = 3;
+        int operator2 = 1;
+        String operation = "*";
+
+        double mathOperation = mathOperatorService.doMath(operator1,operator2, operation);
+        when(mathOperatorService.doMath(operator1, operator2, operation)).thenReturn(mathOperation);
+
+        double actualMathOperator = mathOperatorService.doMath(operator1, operator2, operation);
+
+        assertThat(mathOperation).isEqualTo(actualMathOperator);
+    }
+
+    @Test
+    public void whenDiv_returnDivision() throws InvalidOperationException {
+        int operator1 = 3;
+        int operator2 = 1;
+        String operation = "/";
+
+        double mathOperation = mathOperatorService.doMath(operator1,operator2, operation);
+        when(mathOperatorService.doMath(operator1, operator2, operation)).thenReturn(mathOperation);
+
+        double actualMathOperator = mathOperatorService.doMath(operator1, operator2, operation);
+
+        assertThat(mathOperation).isEqualTo(actualMathOperator);
+    }
 
 }
