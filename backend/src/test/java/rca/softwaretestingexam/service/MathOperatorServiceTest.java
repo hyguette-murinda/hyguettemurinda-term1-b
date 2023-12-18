@@ -35,6 +35,19 @@ public class MathOperatorServiceTest {
     }
 
     
-   
+    @Test
+    public void whenSub_returnSubtraction() throws InvalidOperationException {
+        int operator1 = 3;
+        int operator2 = 1;
+        String operation = "-";
+
+        double mathOperation = mathOperatorService.doMath(operator1,operator2, operation);
+        when(mathOperatorService.doMath(operator1, operator2, operation)).thenReturn(mathOperation);
+
+        double actualMathOperator = mathOperatorService.doMath(operator1, operator2, operation);
+
+        assertThat(mathOperation).isEqualTo(actualMathOperator);
+    }
+
 
 }
