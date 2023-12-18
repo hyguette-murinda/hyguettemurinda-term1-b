@@ -45,5 +45,16 @@ public class CalculatorTest {
         double expected = 3.0;
         assertEquals(actual,expected);
     }
-
+    @Test
+    void WhenMult_returnProduct() throws InvalidOperationException {
+        double actual = mathOperatorService.doMath(3,2,"*");
+        double expected = 6.0;
+        assertEquals(actual,expected);
+    }
+    @Test
+    void WhenSub_returnSubtraction() throws InvalidOperationException {
+        double actual = mathOperatorService.doMath(3,2,"-");
+        double expected = 1.0;
+        assertEquals(actual,expected);
+    }
 }
