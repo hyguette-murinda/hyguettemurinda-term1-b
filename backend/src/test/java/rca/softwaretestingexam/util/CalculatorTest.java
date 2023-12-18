@@ -17,7 +17,7 @@ public class CalculatorTest {
     }
     @Test
     public void WhenAddWithZero_returnNumber() throws InvalidOperationException {
-        assertEquals(mathOperatorService.doMath(0,3,"+"),3.0);
+        assertEquals(mathOperatorService.doMath(3, 0,"+"),3.0);
     }
     
     @Test
