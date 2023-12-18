@@ -1,4 +1,4 @@
-package rca.softwaretestingexam.v1.service;
+package rca.softwaretestingexam.service;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

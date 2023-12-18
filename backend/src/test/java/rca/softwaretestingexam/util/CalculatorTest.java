@@ -12,7 +12,7 @@ public class CalculatorTest {
     @Test
     void WhenAdd_returnSum() throws InvalidOperationException {
         double actual = mathOperatorService.doMath( 3, 1,"+");
-        double expected  = 5;
+        double expected  = 4;
         assertEquals(actual,expected);
     }
     @Test
